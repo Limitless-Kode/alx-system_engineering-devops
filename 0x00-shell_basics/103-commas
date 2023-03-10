@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -1 --group-directories-first -v | tr '\n' ',' | sed 's/,$/\n/' | sed 's/\(.*\)\/$/\1\//' | sed 's/\(.*\)/"\1"/' | tr -d '\n'
-
+ls -pm
