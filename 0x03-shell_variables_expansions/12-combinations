@@ -1,9 +1,2 @@
 #!/bin/bash
-for first in {a..z}; do
-  for second in {a..z}; do
-    if [ "$first$second" != "oo" ]; then
-      echo "$first$second"
-    fi
-  done
-done
-
+printf '%s\n' {a..z}{a..z} | grep -v 'oo'
