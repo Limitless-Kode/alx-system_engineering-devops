@@ -1,2 +1,2 @@
 #!/bin/bash
-set | grep -E '^(\w+|=)' | grep -v 'BASH' | sort
+set -o posix; set | less
